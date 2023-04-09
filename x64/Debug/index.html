@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guardar texto en una cookie</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+		.container {
+			margin: 50px auto;
+			padding: 20px;
+			max-width: 500px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+		label {
+			display: block;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		input[type="text"] {
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			width: 100%;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		button[type="submit"] {
+			padding: 10px 20px;
+			font-size: 16px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Guardar texto en una cookie</h1>
+		<form onsubmit="return saveText()">
+			<label for="text-input">Ingresa un texto:</label>
+			<input type="text" id="text-input" name="text-input" placeholder="Escribe algo aquí...">
+			<button type="submit">Guardar</button>
+		</form>
+	</div>
+	<script type="text/javascript">
+		function saveText() {
+			var text = document.getElementById("text-input").value;
+			document.cookie = "text=" + encodeURIComponent(text) + "; max-age=3600";
+			alert("El texto ha sido guardado en una cookie por 1 hora.");
+			return false;
+		}
+	</script>
+</body>
+</html>
