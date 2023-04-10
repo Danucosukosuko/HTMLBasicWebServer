@@ -6,3 +6,4 @@ y dale a enter
 Ahora vete desde este mismo dispositivo o desde otro (Si es desde otro, tendrás que poner la IP del dispositivo) y pon 127.0.0.1:8111 y te saldrá esto con la web default:
 ![image](https://user-images.githubusercontent.com/71569318/230793383-f8963f48-2a2b-4156-98d8-c57a688984dc.png)
 Esto podría llegar (Creo) a ser útil en algún caso como hacer una intranet o si abres los puertos del router, puedes hacer una página web global, Mejor si le añades un dominio, ya flipas.
+Si quieres distribuir una web, podrías hacer un ZIP con el html, css y js y el favicon.ico
