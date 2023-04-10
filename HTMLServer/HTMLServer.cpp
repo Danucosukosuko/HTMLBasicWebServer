@@ -9,6 +9,8 @@
 
 //HTMLBasicWebServer
 // (C) Pablo 2023
+// Servidor básico. Accede a 127.0.0.1:8881 si quieres ver la web
+// creada en local
 
 
 
